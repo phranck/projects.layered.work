@@ -1,0 +1,80 @@
+title: NeXT SoundBox mini USB Audio
+description: Visualization and description of all components of the NeXT SoundBox mini
+keywords:
+  - NeXT SoundBox
+  - USB Audio
+  - PCM2706
+  - PAM8302A
+  - USB DAC
+  - circuit schematic
+  - electronic project
+  - DIY audio
+version: V1.0
+createdDate: 03.05.2025
+updatedDate: 30.07.2025
+isVisible: true
+isActive: true
+projectCategory: next
+mainImage: img/soundbox.jpeg
+previewImage: img/soundbox_preview.jpeg
+schematicImage: img/schematic.png
+model3d: model/soundbox.glb
+overview:
+  intro: This is a replica of the NeXT SoundBox on a scale of 1:2 with a custom USB-Audio controller board, which drives a mono speaker. The circuit converts digital audio data from the USB port into an analog signal, amplifies it, and outputs it to a speaker. The following diagram shows the path from data to sound.
+  blocks:
+    - { id: usb-input, title: USB Input, color: emerald }
+    - { id: usb-dac, title: USB DAC, color: purple }
+    - { id: stereo-to-mono, title: Stereo to Mono, color: sky }
+    - { id: mono-amplifier, title: Mono Amplifier, color: rose }
+componentSections:
+  - id: usb-input
+    title: USB Input
+    color: emerald
+    intro: This part of the circuit is the interface to the outside world. It receives power and data from the USB port, filters the voltage, and protects the entire circuit from electrostatic discharge.
+    components:
+      - { title: 'USB1: USB Type-B Jack', description: 'Physical interface to the host. Provides +5V (VBUS), Ground (GND), and the differential data lines D+ and D-.' }
+      - { title: 'L1: Ferrite Bead', description: 'Filters high-frequency noise from the USB power supply before it reaches the circuit.' }
+      - { title: 'U1: USBLC6-2P6 (ESD Protection)', description: 'Protects the sensitive data lines (D+, D-) and the VBUS line from damage caused by electrostatic discharge.' }
+      - { title: 'LED1 & R1: Power Indicator', description: 'A green LED connected directly to the 5V line to indicate that the USB port is supplying power.' }
+  - id: usb-dac
+    title: USB DAC (PCM2706)
+    color: purple
+    intro: This is the digital core of the sound card. This functional group receives the digital audio stream from the USB connection and converts it into an analog stereo sound signal.
+    components:
+      - { title: 'U5: PCM2706', description: 'The heart of the circuit. This chip is a stereo audio DAC with an integrated 3.3V LDO. It is powered by the 5V VBUS and generates its own internal supply voltages.' }
+      - { title: 'X2, C30, C31, R13: Oscillator Circuit', description: 'A 12MHz crystal with appropriate circuitry generates the precise clock signal required by the PCM2706 for USB communication and audio synchronization.' }
+      - { title: 'C24, C26, C27, C28, C29: Decoupling Capacitors', description: 'These capacitors are placed directly at the power supply pins of the DAC to stabilize the internally generated voltage and filter high-frequency noise, which is crucial for good audio quality.' }
+  - id: stereo-to-mono
+    title: Stereo to Mono
+    color: sky
+    intro: This simple passive circuit combines the left and right audio channels from the DAC into a single mono signal and prepares it for the mono amplifier.
+    components:
+      - { title: 'R3, R4, C4: Passive Mixer', description: 'Resistors R3 and R4 (10kΩ each) mix the left and right channels from the DAC into a single mono signal. Capacitor C4 couples this signal to the amplifier and filters out any DC component.' }
+  - id: mono-amplifier
+    title: Mono Amplifier (PAM8302A)
+    color: rose
+    intro: The final stage in the signal chain. This module takes the weak mono audio signal and amplifies it with enough power to drive a speaker.
+    components:
+      - { title: 'U3: PAM8302A', description: 'An efficient Class-D mono audio amplifier. It takes the weak mono signal at the input (Pin 4) and amplifies it to drive a speaker.' }
+      - { title: 'C3: Input Coupling Capacitor', description: 'This capacitor at the amplifier input allows the audio signal to pass through while blocking any DC components.' }
+      - { title: 'R8: Pull-down Resistor', description: 'Prevents "popping" noises during power-up and power-down by keeping the input at a defined level.' }
+      - { title: 'H1: Speaker Terminal', description: 'A 2-pin screw terminal for connecting the speaker.' }
+      - { title: 'C32: Bulk Capacitor', description: 'This large capacitor stabilizes the 5V supply for the amplifier, providing extra current for loud bass notes.' }
+bom:
+  - { ref: C3,C4,C29, val: 100nF, desc: Decoupling/Coupling Capacitor, pkg: '0805', lcsc: C1525 }
+  - { ref: C28, val: 100uF, desc: Bulk bypass capacitor, pkg: TAJB, lcsc: C16133 }
+  - { ref: C32, val: 220uF, desc: Bulk bypass capacitor, pkg: RVT, lcsc: C2887273 }
+  - { ref: C30,C31, val: 22pF, desc: Load capacitors for crystal, pkg: '0603', lcsc: C105620 }
+  - { ref: C24,C26,C27, val: 1uF, desc: Decoupling capacitors for DAC, pkg: '0603', lcsc: C15839 }
+  - { ref: H1, val: KF128-5.08-2P-AA, desc: 2-Pin Screw Terminal Block, pkg: 5.08mm, lcsc: C474952 }
+  - { ref: USB1, val: USB-B01, desc: USB 2.0 Type-B Jack, THT, pkg: THT, lcsc: C498173 }
+  - { ref: L1, val: BLM18PG121SN1D, desc: Ferrite Bead for noise suppression, pkg: '0805', lcsc: C14709 }
+  - { ref: LED1, val: KT-0805G, desc: Standard green LED, SMD, pkg: '0805', lcsc: C2297 }
+  - { ref: R1, val: 220Ω, desc: Current limiting resistor for LED, pkg: '0805', lcsc: C25951 }
+  - { ref: R3,R4,R8, val: 10kΩ, desc: Mixing/Pull-down resistors, pkg: '0402', lcsc: C25744 }
+  - { ref: R13, val: 1MΩ, desc: Parallel resistor for crystal, pkg: '0603', lcsc: C105578 }
+  - { ref: R14, val: 1mΩ, desc: Pull-down for DAC Pin 1, pkg: '0603', lcsc: '' }
+  - { ref: U1, val: USBLC6-2P6, desc: ESD protection for 2 data lines and VBUS, pkg: SOT-666, lcsc: C15999 }
+  - { ref: U3, val: PAM8302AASCR, desc: 2.5W Class-D Mono Audio Amplifier, pkg: SOP-8, lcsc: C113367 }
+  - { ref: U5, val: PCM2706PJT, desc: USB Stereo Audio DAC, pkg: TQFP-32, lcsc: C1519999 }
+  - { ref: X2, val: 12MHz, desc: Crystal Oscillator, pkg: '3225', lcsc: C9002 }

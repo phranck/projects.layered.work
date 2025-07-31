@@ -1,0 +1,5 @@
+{
+  "php.validate" : "onSave",
+  "workspace.color" : 14,
+  "workspace.preview_root" : "."
+}

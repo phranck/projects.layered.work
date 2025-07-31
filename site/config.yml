@@ -1,0 +1,21 @@
+# Font Awesome Icon Search: https://fontawesome.com/search?ic=free&o=r
+socialLinks:
+  - title: Mastodon
+    url: https://chaos.social/@LAYERED
+    icon: mastodon
+  - title: GitHub
+    url: https://github.com/phranck
+    icon: github
+  - title: Instagram
+    url: https://www.instagram.com/layered.work/
+    icon: instagram
+
+projectCategories:
+  - category: next
+    title: NeXT
+  - category: 3dprinting
+    title: 3D Printing
+
+copyright:
+  title: "© 2025 LAYERED.work"
+  claim: "Designed with ❤️ in Bregenz<br>at Lake Constance<br>Austria"

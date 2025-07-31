@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Roboto Flex';
+  src: url('../fonts/RobotoFlex-Variable.woff2') format('woff2');
+  font-weight: 100 1000;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow Condensed';
+  src: url('../fonts/BarlowCondensed-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+
+body {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.card {
+    transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.sortable-header {
+    cursor: pointer;
+    user-select: none;
+}
+
+#lightbox, #lightbox-3d {
+    transition: opacity .3s ease-in-out;
+}
+
+#lightbox img, #lightbox-3d #lightbox-3d-content {
+    transition: transform .3s ease-in-out;
+}
+
+.category-btn {
+    transition: color .3s ease-in-out;
+}
