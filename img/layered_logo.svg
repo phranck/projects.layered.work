@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 900 450" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-1082.83,-506.967)">
+        <g id="Layered-Logo--Watermark" serif:id="Layered Logo, Watermark" transform="matrix(0.878906,0,0,0.439453,1082.83,506.967)">
+            <rect x="0" y="0" width="1024" height="1024" style="fill:none;"/>
+            <g transform="matrix(1.13778,0,0,2.27556,-5738.26,-2773.83)">
+                <g transform="matrix(137.5,0,0,137.5,5870.84,1430.23)">
+                </g>
+                <text x="5112.78px" y="1430.23px" style="font-family:'Audiowide-Regular', 'Audiowide';font-size:137.5px;fill:white;">LAYERED</text>
+            </g>
+            <g transform="matrix(0.972909,0,0,1.94582,-4832.91,-2027.65)">
+                <g transform="matrix(141.667,0,0,141.667,5739.59,1430.23)">
+                </g>
+                <text x="5244.03px" y="1430.23px" style="font-family:'Audiowide-Regular', 'Audiowide';font-size:141.667px;fill:none;stroke:white;stroke-width:4.87px;">W<tspan x="5385.29px " y="1430.23px ">O</tspan>RK</text>
+            </g>
+            <g id="Rainbow-Stripes" serif:id="Rainbow Stripes" transform="matrix(0.721062,-2.67524e-17,1.61103e-17,-2,234.691,1851.38)">
+                <g>
+                    <g transform="matrix(0.288641,1.64176e-17,6.58307e-17,1.24419,-799.18,-1287)">
+                        <rect x="5325.72" y="1472.51" width="792.674" height="20.118" style="fill:rgb(43,116,136);"/>
+                    </g>
+                    <g transform="matrix(0.288641,1.64176e-17,6.58307e-17,1.24419,-799.18,-1260.83)">
+                        <rect x="5325.72" y="1472.51" width="792.674" height="20.118" style="fill:rgb(117,140,52);"/>
+                    </g>
+                    <g transform="matrix(0.288641,1.64176e-17,6.58307e-17,1.24419,-799.18,-1234.66)">
+                        <rect x="5325.72" y="1472.51" width="792.674" height="20.118" style="fill:rgb(251,172,62);"/>
+                    </g>
+                    <g transform="matrix(0.288641,1.64176e-17,6.58307e-17,1.24419,-799.18,-1208.49)">
+                        <rect x="5325.72" y="1472.51" width="792.674" height="20.118" style="fill:rgb(198,70,22);"/>
+                    </g>
+                </g>
+            </g>
+            <g id="Rainbow-Stripes1" serif:id="Rainbow Stripes" transform="matrix(0.721062,-2.67524e-17,1.61103e-17,-2,-388.045,1853.65)">
+                <g>
+                    <g transform="matrix(0.289846,1.62951e-17,6.53395e-17,1.24419,-878.374,-1286.43)">
+                        <rect x="5325.72" y="1472.51" width="792.674" height="20.118" style="fill:rgb(43,116,136);"/>
+                    </g>
+                    <g transform="matrix(0.289846,1.62951e-17,6.53395e-17,1.24419,-878.374,-1260.26)">
+                        <rect x="5325.72" y="1472.51" width="792.674" height="20.118" style="fill:rgb(117,140,52);"/>
+                    </g>
+                    <g transform="matrix(0.289846,1.62951e-17,6.53395e-17,1.24419,-878.374,-1234.09)">
+                        <rect x="5325.72" y="1472.51" width="792.674" height="20.118" style="fill:rgb(251,172,62);"/>
+                    </g>
+                    <g transform="matrix(0.288641,1.64176e-17,6.58307e-17,1.24419,-871.003,-1207.92)">
+                        <rect x="5325.72" y="1472.51" width="792.674" height="20.118" style="fill:rgb(198,70,22);"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

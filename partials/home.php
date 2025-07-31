@@ -1,7 +1,6 @@
 <header class="text-center mb-12 md:mb-16">
-    <img src="https://pluspng.com/img-png/next-logo-png-open-2000.png" alt="NeXT Logo" class="h-20 mx-auto mt-8 mb-12">
-    <h1 class="text-4xl md:text-5xl font-bold text-zinc-900">Project Overview</h1>
-    <p class="mt-4 text-xl md:text-2xl text-zinc-600">A selection of documented projects.</p>
+    <h1 class="text-4xl md:text-5xl font-bold text-zinc-900">LAYERED Projects</h1>
+    <p class="mt-4 text-xl md:text-2xl text-zinc-600">This is an overview of various projects I am working on or have worked on. A mixed bag of 3D printing, electronics, software development and woodworking.</p>
 </header>
 <main>
     <div class="flex justify-center mb-8">
