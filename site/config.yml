@@ -13,8 +13,16 @@ socialLinks:
 projectCategories:
   - category: next
     title: NeXT
+    icon: desktop
   - category: 3dprinting
     title: 3D Printing
+    icon: cubes
+  - category: electronics
+    title: Electronics
+    icon: lightbulb
+  - category: woodworking
+    title: Woodworking
+    icon: hammer
 
 copyright:
   title: "© 2025 LAYERED.work"

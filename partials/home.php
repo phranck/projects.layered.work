@@ -7,10 +7,10 @@
     <div class="flex justify-center mb-8">
         <div id="category-filter" class="relative inline-flex rounded-lg shadow-sm bg-stone-200 p-1">
             <div id="glider" class="absolute top-1 bottom-1 bg-white rounded-lg shadow-sm transition-all duration-300 ease-in-out"></div>
-            <button data-category="all" class="category-btn flex-1 px-6 py-2 text-sm font-semibold text-zinc-800 z-10 whitespace-nowrap">All</button>
+            <button data-category="all" class="category-btn flex justify-center items-center px-6 py-2 text-sm font-semibold text-zinc-800 z-10 whitespace-nowrap w-[150px]">All</button>
             <?php if (!empty($config['projectCategories'])): ?>
                 <?php foreach ($config['projectCategories'] as $category): ?>
-                    <button data-category="<?= htmlspecialchars($category['category']) ?>" class="category-btn flex-1 px-6 py-2 text-sm font-semibold text-zinc-500 hover:text-zinc-800 z-10 whitespace-nowrap"><?= htmlspecialchars($category['title']) ?></button>
+                    <button data-category="<?= htmlspecialchars($category['category']) ?>" class="category-btn flex justify-center items-center px-6 py-2 text-sm font-semibold text-zinc-500 hover:text-zinc-800 z-10 whitespace-nowrap w-[150px]"><?= htmlspecialchars($category['title']) ?></button>
                 <?php endforeach; ?>
             <?php endif; ?>
         </div>

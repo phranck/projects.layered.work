@@ -1,4 +1,4 @@
-title: NeXT SoundBox mini USB Audio
+title: NeXT SoundBox
 description: Visualization and description of all components of the NeXT SoundBox mini
 keywords:
   - NeXT SoundBox
@@ -11,7 +11,7 @@ keywords:
   - DIY audio
 version: V1.0
 createdDate: 03.05.2025
-updatedDate: 30.07.2025
+updatedDate: 31.07.2025
 isVisible: true
 isActive: true
 projectCategory: next
